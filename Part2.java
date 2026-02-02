@@ -2,7 +2,29 @@ void main() {
 //    readAndAddNumbers();
 //    printAndLoop();
 //    countOnes();
-    countPosAndNeg();
+//    countPosAndNeg();
+//    printFrom1ToN();
+    int ans = factorial(6);
+    System.out.println("Factorial " + ans);
+}
+
+public static int factorial(int n) {
+    if (n <= 1) return 1;
+
+    return n * factorial(n - 1);
+}
+
+public static void printFrom1ToN() {
+    /*
+        Write a program which prints the integers from 1 to a number given by the user.
+     */
+    System.out.println("Enter a number");
+    Scanner scanner = new Scanner(System.in);
+    int count = Integer.parseInt(scanner.nextLine());
+
+    for (int i = 1; i <= count; i++) {
+        System.out.println(i);
+    }
 }
 
 public static void countPosAndNeg() {
