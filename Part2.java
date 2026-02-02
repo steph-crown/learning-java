@@ -1,7 +1,35 @@
 void main() {
 //    readAndAddNumbers();
 //    printAndLoop();
-    countOnes();
+//    countOnes();
+    countPosAndNeg();
+}
+
+public static void countPosAndNeg() {
+    /*
+         a program which reads numbers from the user until the user writes 0. Then the program
+         prints the number of positive and negative numbers given, and the percentage of positive
+          numbers from all numbers given.
+     */
+    Scanner scanner = new Scanner(System.in);
+    int pos = 0, neg = 0;
+
+    while (true) {
+        System.out.println("Enter number, nigga (0 exits)");
+        int num = Integer.parseInt(scanner.nextLine());
+
+        if (num == 0) break;
+
+        if (num > 0) {
+            pos++;
+        } else {
+            neg++;
+        }
+    }
+
+    float perc = (float) (pos * 100) / (pos + neg);
+
+    System.out.println("Positives: " + pos + "\nNegatives: " + neg + "\n% of Positives: " + perc + "%");
 }
 
 public static void countOnes() {
@@ -21,9 +49,9 @@ public static void countOnes() {
         } else if (number == 0) {
             break;
         }
-
-        System.out.println("The number of ones is " + onesCount);
     }
+
+    System.out.println("The number of ones is " + onesCount);
 }
 
 public static void printAndLoop() {
