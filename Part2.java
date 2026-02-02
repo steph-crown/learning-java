@@ -4,8 +4,23 @@ void main() {
 //    countOnes();
 //    countPosAndNeg();
 //    printFrom1ToN();
-    int ans = factorial(6);
-    System.out.println("Factorial " + ans);
+//    int ans = factorial(6);
+//    System.out.println("Factorial " + ans);
+
+//    System.out.println(divide(3, 3));
+    divisibleByThreeInRange(2, 10);
+}
+
+public static void divisibleByThreeInRange(int beginning, int end) {
+    for (int i = beginning; i <= end; i++) {
+        if (i % 3 == 0) {
+            System.out.println(i);
+        }
+    }
+}
+
+public static float divide(int x, int y) {
+    return (float) x / y;
 }
 
 public static int factorial(int n) {
@@ -25,6 +40,9 @@ public static void printFrom1ToN() {
     for (int i = 1; i <= count; i++) {
         System.out.println(i);
     }
+    
+
+    return;
 }
 
 public static void countPosAndNeg() {
