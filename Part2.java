@@ -1,7 +1,4 @@
-import java.io.InputStream;
-import java.util.Scanner;
-
-public class Example {
+public class Part2 {
     public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
 //
@@ -12,9 +9,11 @@ public class Example {
 //
 //        System.out.println(first + " + " + second + " = " + (first + second));
 //
+        System.out.println(args);
 
 //        arithmetic
         double x = (double) 4;
+
         System.out.println("double " + x);
 
         int y = (int) 3.8;
