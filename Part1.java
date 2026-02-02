@@ -1,5 +1,5 @@
-public class Part1 {
-    public static void main(String[] args) {
+
+void main(String[] _args) {
 //        Scanner scanner = new Scanner(System.in);
 //
 //        System.out.println("Give the first number:");
@@ -9,17 +9,14 @@ public class Part1 {
 //
 //        System.out.println(first + " + " + second + " = " + (first + second));
 //
-        System.out.println(args);
-
 //        arithmetic
-        double x = (double) 4;
+    double x = (int) 4;
 
-        System.out.println("double " + x);
+    System.out.println("double " + x);
 
-        int y = (int) 3.8;
-        System.out.println("y " + y);
+    int y = (int) 3.8;
+    System.out.println("y " + y);
 
-        int z = y;
-        System.out.println("y " + y);
-    }
+    int z = y;
+    System.out.println("y " + y);
 }

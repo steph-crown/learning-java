@@ -1,25 +1,29 @@
-public class Part2 {
-    public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Give the first number:");
-//        int first = Integer.parseInt(scanner.nextLine());
-//        System.out.println("Give the second number:");
-//        int second = Integer.parseInt(scanner.next());
-//
-//        System.out.println(first + " + " + second + " = " + (first + second));
-//
-        System.out.println(args);
+void main() {
+    readAndAddNumbers();
+}
 
-//        arithmetic
-        double x = (double) 4;
 
-        System.out.println("double " + x);
+public static void readAndAddNumbers() {
+    /*
+        Let's look into a problem "Read two integers from the user. If the sum of the
+        integers is
+        over 100, print too much. If the sum is less than 0, print too little. Otherwise,
+        print ok.
+        The program below combines reading, calculating and conditional functionality.
+    */
 
-        int y = (int) 3.8;
-        System.out.println("y " + y);
+    Scanner scanner = new Scanner(System.in);
+    IO.println("Enter first number");
+    int first = Integer.parseInt(scanner.nextLine());
+    IO.println("Enter second number");
+    int second = Integer.parseInt(scanner.nextLine());
+    int sum = first + second;
 
-        int z = y;
-        System.out.println("y " + y);
+    if (sum > 100) {
+        IO.println("too much");
+    } else if (sum < 0) {
+        IO.println("too little");
+    } else {
+        IO.println("ok");
     }
 }
