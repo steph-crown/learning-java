@@ -7,6 +7,22 @@ void main() {
     person.setAge(8390);
 
     System.out.println(person);
+
+//    Scanner scanner = new Scanner(System.in);
+//    while (scanner.hasNextLine()) {
+//        String input = scanner.nextLine(); // This "consumes" the line
+//        System.out.println("Echo: " + input);
+//    }
+
+//    files
+    try (Scanner scanner = new Scanner(Paths.get("Readme.md"))) {
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            System.out.println("line " + line);
+        }
+    } catch (IOException e) {
+        throw new RuntimeException(e);
+    }
 }
 
 public static class Student {
