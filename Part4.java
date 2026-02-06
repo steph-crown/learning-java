@@ -26,7 +26,6 @@ void main() {
 }
 
 public static class Student {
-
     private int credits;
 
     public Student() {
