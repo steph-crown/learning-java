@@ -3,16 +3,10 @@ void main() {
     student.play();
     System.out.println(student.credits);
 
-    Person person = new Person("ridicule");
-    person.setAge(8390);
+    Person person = new Person("fantasious", 99);
+//    person.setAge(8390);
 
     System.out.println(person);
-
-//    Scanner scanner = new Scanner(System.in);
-//    while (scanner.hasNextLine()) {
-//        String input = scanner.nextLine(); // This "consumes" the line
-//        System.out.println("Echo: " + input);
-//    }
 
 //    files
     try (Scanner scanner = new Scanner(Paths.get("Readme.md"))) {

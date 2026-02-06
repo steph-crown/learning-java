@@ -3,8 +3,18 @@ public class Person {
     private int age;
 
     public Person(String name) {
-        this.setName(name);
-        this.setAge(0);
+        this.name = name;
+        this.age = 0;
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Person(int age) {
+        this.age = age;
+        this.name = "Unknown";
     }
 
     public final void setName(String name) {
