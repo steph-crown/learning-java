@@ -12,7 +12,8 @@ void main() {
 //    menu.addMeal("Tomato and mozzarella salad");
 //    menu.printMeals();
 
-    UserInterface userInterface = new UserInterface();
+    Scanner scanner = new Scanner(System.in);
+    UserInterface userInterface = new UserInterface(scanner);
 
     userInterface.run();
 }
