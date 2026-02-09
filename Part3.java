@@ -1,5 +1,6 @@
 void main() {
     ArrayList<Integer> arr = new ArrayList<>(List.of(2, 3, 4, 5));
+    System.out.println(arr);
     arr.add(90);
     System.out.println(arr.size());
 
