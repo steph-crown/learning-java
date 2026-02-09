@@ -16,12 +16,16 @@ public class UserInterface {
             System.out.print("Write a word: ");
             String word = scanner.nextLine().trim();
 
-            if (words.contains(word)) {
+            if (this.alreadyEntered(word)) {
                 System.out.println("You wrote the same word twice!");
                 break;
             }
 
             words.add(word);
         }
+    }
+
+    private boolean alreadyEntered(String word) {
+        return this.words.contains(word);
     }
 }
