@@ -6,5 +6,8 @@ void main() {
 
     Order.swap(numbers, 0, 3);
     System.out.println(Arrays.toString(numbers));
+
+    Order.sort(numbers);
+    System.out.println(Arrays.toString(numbers));
 }
 

@@ -32,4 +32,11 @@ public class Order {
         array[index1] = array[index2];
         array[index2] = temp;
     }
+
+    public static void sort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            int smallestIndex = indexOfSmallestFrom(arr, i);
+            swap(arr, i, smallestIndex);
+        }
+    }
 }
