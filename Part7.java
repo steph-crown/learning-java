@@ -1,5 +1,5 @@
 void main() {
-    int[] numbers = {-1, 6, 9, 8, 3};
+    int[] numbers = {-1, 6, 9, 8, 3, 2, 30, 3, 5};
     System.out.println("smallest " + Order.smallest(numbers));
     System.out.println("smallest " + Order.indexOfSmallest(numbers));
     System.out.println("smallest " + Order.indexOfSmallestFrom(numbers, 1));
@@ -11,5 +11,6 @@ void main() {
     System.out.println(Arrays.toString(numbers));
 
     System.out.println(Algorithms.linearSearch(numbers, 8));
+    System.out.println(Algorithms.binarySearch(numbers, 30));
 }
 
