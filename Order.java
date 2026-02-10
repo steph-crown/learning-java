@@ -10,10 +10,14 @@ public class Order {
     }
 
     public static int indexOfSmallest(int[] arr) {
+        return indexOfSmallestFrom(arr, 0);
+    }
+
+    public static int indexOfSmallestFrom(int[] arr, int startIndex) {
         int val = Integer.MAX_VALUE;
         int index = -1;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = startIndex; i < arr.length; i++) {
             if (arr[i] < val) {
                 val = arr[i];
                 index = i;

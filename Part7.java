@@ -1,6 +1,7 @@
 void main() {
-    int[] numbers = {-1, 6, 9, 8, -3};
+    int[] numbers = {-1, 6, 9, 8, 3};
     System.out.println("smallest " + Order.smallest(numbers));
     System.out.println("smallest " + Order.indexOfSmallest(numbers));
+    System.out.println("smallest " + Order.indexOfSmallestFrom(numbers, 1));
 }
 
