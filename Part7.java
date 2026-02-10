@@ -3,5 +3,8 @@ void main() {
     System.out.println("smallest " + Order.smallest(numbers));
     System.out.println("smallest " + Order.indexOfSmallest(numbers));
     System.out.println("smallest " + Order.indexOfSmallestFrom(numbers, 1));
+
+    Order.swap(numbers, 0, 3);
+    System.out.println(Arrays.toString(numbers));
 }
 
