@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Order {
     public static int smallest(int[] arr) {
         int smallestIndex = indexOfSmallest(arr);
@@ -37,6 +39,7 @@ public class Order {
         for (int i = 0; i < arr.length; i++) {
             int smallestIndex = indexOfSmallestFrom(arr, i);
             swap(arr, i, smallestIndex);
+            System.out.println(Arrays.toString(arr));
         }
     }
 }
