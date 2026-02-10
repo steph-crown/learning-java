@@ -9,5 +9,7 @@ void main() {
 
     Order.sort(numbers);
     System.out.println(Arrays.toString(numbers));
+
+    System.out.println(Algorithms.linearSearch(numbers, 8));
 }
 
