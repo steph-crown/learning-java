@@ -15,16 +15,17 @@ public class Container {
 
     public void add(int value) {
         if (this.value + value > this.limit) {
-            throw new RuntimeException("exceeds_limit");
+            this.value = this.limit;
+            return;
         }
 
         this.value += value;
-        System.out.println(this.value);
     }
 
     public void remove(int value) {
         if (this.value - value < 0) {
-            throw new RuntimeException("goes_below_0");
+            this.value = 0;
+            return;
         }
 
         this.value -= value;

@@ -1,7 +1,7 @@
 void main() {
     Scanner scanner = new Scanner(System.in);
     Container first = new Container("first", 100);
-    Container second = new Container("second");
+    Container second = new Container("second", 100);
 
     while (true) {
         String input = scanner.nextLine();
@@ -24,30 +24,16 @@ void main() {
 
         switch (command) {
             case "add":
-                try {
-                    first.add(value);
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                }
+                first.add(value);
                 break;
             case "move":
-                try {
-                    first.remove(value);
-                    second.add(value);
-                } catch (Exception err) {
-                    String errorCode = err.getMessage();
-                    if (errorCode.equals("exceeds_limit")) {
-                        first.add(value);
-                    }
-                    System.out.println(errorCode);
-                }
+                int valueToMove = Math.min(value, first.contains());
+                first.remove(valueToMove);
+                second.add(valueToMove);
                 break;
             case "remove":
-                try {
-                    second.remove(value);
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                }
+                second.remove(value);
+                break;
             case null, default:
                 System.out.println("Invalid input, try again");
         }
