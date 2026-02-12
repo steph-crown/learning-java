@@ -47,4 +47,5 @@ void main() {
     map.put("msss", "sksk");
     map.replace("jsjs", "isaiaia");
     System.out.println("map " + map.toString() + " " + map.get("jsjs"));
+
 }
