@@ -25,10 +25,12 @@ void main() {
             .average()
             .getAsDouble();
 
-    int[] fuck = inputs.stream().mapToInt(Integer::parseInt).toArray();
+    ArrayList<Integer> fuck =
+            inputs.stream().map(Integer::parseInt).collect(Collectors.toCollection(ArrayList
+                    ::new));
 
     // printing out the statistics
     System.out.println("Divisible by three " + numbersDivisibleByThree);
     System.out.println("Average number: " + average);
-    System.out.println("int[], " + Arrays.toString(fuck));
+    System.out.println("int[], " + fuck);
 }
